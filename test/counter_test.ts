@@ -24,4 +24,9 @@ describe('Counter', () => {
     expect((await counter.decrement()));
       console.log((await counter.current()).toString());
   });
+
+  it('Should return the description', async () => {
+    expect(await counter.currentdescription());
+    console.log((await counter.currentdescription()).toString());
+  });
 });

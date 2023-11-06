@@ -16,12 +16,12 @@ describe('Counter', () => {
   });
 
   it('Should increase the count', async () => {
-    expect((await counter.increment()).value.toString(3));
+    expect((await counter.increment()));
       console.log((await counter.current()).toString());
   });
 
   it('Should decrease the Count', async () => {
-    expect((await counter.decrement()).value.toString(2));
+    expect((await counter.decrement()));
       console.log((await counter.current()).toString());
   });
 });
